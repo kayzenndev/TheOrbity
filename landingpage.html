@@ -13,6 +13,13 @@
 
     <header class="header" id="home">
         <nav class="navga" aria-label="Navegação principal">
+
+            <button class="hamburger" aria-label="Abrir menu" aria-expanded="false">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+
             <ul id="menu-principal">
                 <li class="nav-home"><a href="#home">HOME</a></li>
                 <li><a href="#about">SOBRE</a></li>
@@ -21,6 +28,8 @@
                 <li><a href="#socialmidea">SOCIAL</a></li>
             </ul>
         </nav>
+
+        <div class="menu-overlay"></div>
 
         <video class="headervideo" autoplay muted loop playsinline aria-hidden="true">
             <source src="./assets/4.mp4">
@@ -130,47 +139,34 @@
 
         <section class="section section2 containersec" id="github">
             <div class="github">
-                <video class="sec2video" autoplay muted loop playsinline aria-hidden="true">
-                    <source src="./assets/space.mp4" type="video/mp4">
-                </video>
+                
+                <h2>Github Page</h2>
 
-                <div class="sec2overlay"></div>
+                <p>
+                    O desenvolvimento do Orbity foi dividido em duas etapas principais. Na primeira fase, o programa realiza cálculos de trajetória utilizando um modelo físico simplificado, considerando apenas as variáveis básicas do movimento e desconsiderando fatores mais complexos, como resistência do ar, vento e outras interferências externas. Dessa forma, o sistema consegue gerar simulações iniciais de maneira mais simples e didática, facilitando o entendimento dos conceitos fundamentais da física aplicada aos foguetes.
+                </p>
+                <br>
 
-                <div class="sec2content">
-                    <h2>Github Page</h2>
+                
 
-                    <div class="box">
+                <img src="./imgs/githubimage.png" alt="imagem github" width="100%" style="margin-bottom: 3%;">
 
-                        <div class="boxcontent">
-                            <p>
-                                O desenvolvimento do Orbity foi dividido em duas etapas principais. Na primeira fase, o programa realiza cálculos de trajetória utilizando um modelo físico simplificado, considerando apenas as variáveis básicas do movimento e desconsiderando fatores mais complexos, como resistência do ar, vento e outras interferências externas. Dessa forma, o sistema consegue gerar simulações iniciais de maneira mais simples e didática, facilitando o entendimento dos conceitos fundamentais da física aplicada aos foguetes.
-                            </p>
-                            <br>
+                <p>
+                    Agora, também foi implementada a segunda parte do projeto, responsável por tornar as simulações muito mais precisas e realistas. Nessa etapa, o Orbity passará a utilizar o método numérico de Runge-Kutta juntamente com equações diferenciais, permitindo calcular a trajetória do foguete levando em consideração variáveis físicas mais complexas, como arrasto aerodinâmico, aceleração variável e influência do ambiente no voo. Com isso, o programa evoluirá de uma simulação básica para um sistema mais avançado de modelagem de trajetórias.
+                </p>
+                <br>
 
-                            
+                <img src="./imgs/gi2.png" alt="imagem github" width="100%">
 
-                            <img src="./imgs/githubimage.png" alt="imagem github" width="100%" style="margin-bottom: 3%;">
+                <br>
 
-                            <p>
-                                Agora, também foi implementada a segunda parte do projeto, responsável por tornar as simulações muito mais precisas e realistas. Nessa etapa, o Orbity passará a utilizar o método numérico de Runge-Kutta juntamente com equações diferenciais, permitindo calcular a trajetória do foguete levando em consideração variáveis físicas mais complexas, como arrasto aerodinâmico, aceleração variável e influência do ambiente no voo. Com isso, o programa evoluirá de uma simulação básica para um sistema mais avançado de modelagem de trajetórias.
-                            </p>
-                            <br>
+                
+            </div>
 
-                            <img src="./imgs/gi2.png" alt="imagem github" width="100%">
-
-                            <br>
-
-                        </div>
-
-                        <a href="https://github.com/kayzenndev/Orbity/releases" target="_blank">
-                                <button class="botao">Orbity Download</button>
-                        </a>
-
-                        <br>
-
-                    </div>
-                </div>
-
+            <div class="aling-bot">
+                <a href="https://github.com/kayzenndev/Orbity/releases" target="_blank">
+                    <button class="botao">Orbity Download</button>
+                </a>
             </div>
         </section>
 
@@ -325,6 +321,10 @@
             </div>
         </section>
     </main>
+
+    <button class="back-to-top" aria-label="Voltar ao topo">
+        <svg viewBox="0 0 24 24"><path d="M12 19V5M5 12l7-7 7 7"/></svg>
+    </button>
 
     <footer class="footer">
         <div class="footer-colunas">
