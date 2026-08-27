@@ -4,18 +4,20 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>TheOrbity</title>
+    
     <link rel="stylesheet" href="./src/CSS/style.css">
     <script src="./src/JS/main.js" defer></script>
 </head>
 
 <body>
 
-    <header class="header">
-        <nav class="navga">
-            <ul>
+    <header class="header" id="home">
+        <nav class="navga" aria-label="Navegação principal">
+            <ul id="menu-principal">
+                <li class="nav-home"><a href="#home">HOME</a></li>
                 <li><a href="#about">SOBRE</a></li>
-                <li><a href="#githubpage">GITHUB PAGE</a></li>
-                <li><a href="#references">REFERÊNCIAS</a></li>
+                <li><a href="#github">GITHUB</a></li>
+                <li><a href="#referencias">REFERÊNCIAS</a></li>
                 <li><a href="#socialmidea">SOCIAL</a></li>
             </ul>
         </nav>
@@ -126,10 +128,10 @@
             
         </section>
 
-        <section class="section section2 containersec" id="githubpage">
+        <section class="section section2 containersec" id="github">
             <div class="github">
                 <video class="sec2video" autoplay muted loop playsinline aria-hidden="true">
-                    <source src="./assets/space.mp4">
+                    <source src="./assets/space.mp4" type="video/mp4">
                 </video>
 
                 <div class="sec2overlay"></div>
@@ -160,8 +162,8 @@
 
                         </div>
 
-                        <a href="https://github.com/kayzenndev/Orbity" target="_blank">
-                                <button class="botao">Orbity Github Page</button>
+                        <a href="https://github.com/kayzenndev/Orbity/releases" target="_blank">
+                                <button class="botao">Orbity Download</button>
                         </a>
 
                         <br>
@@ -177,7 +179,7 @@
                 <h2>References</h2>
 
                 <p>
-                    O Orbity foi desenvolvido tendo como base os conteúdos apresentados na coleção Tópicos de Física, utilizados como referência para a fundamentação dos conceitos físicos empregados no projeto, sob orientação e instruções do professor <a href="http://lattes.cnpq.br/1458049704751009" class="link" target="_blank"> Dr. Karciano José Santos Silva</a>. A partir dos conteúdos estudados em sala, foram aplicados conceitos relacionados à cinemática, dinâmica, lançamento de projéteis, aceleração, gravidade e resistência do ar para a construção do modelo de simulação.
+                    O Orbity foi desenvolvido tendo como base os conteúdos apresentados na coleção Tópicos de Física, utilizados como referência para a fundamentação dos conceitos físicos empregados no projeto, sob orientação e instruções do professor <a href="http://lattes.cnpq.br/1458049704751009" class="link" target="_blank"> Prof. Dr. Karciano José Santos Silva</a>. A partir dos conteúdos estudados em sala, foram aplicados conceitos relacionados à cinemática, dinâmica, lançamento de projéteis, aceleração, gravidade e resistência do ar para a construção do modelo de simulação.
                 </p>
 
                 <br>
@@ -243,15 +245,110 @@
                 <p>
                     Software de Analise: Tracker: Video Analysis and Modeling Tool. Disponivel em: 
 
-                    <a href="https://opensourcephysics.github.io/tracker-website/" class="link"> Click Here.</a>
-
+                    <a href="https://opensourcephysics.github.io/tracker-website/" class="link" target="_blank"> Click Here.</a>
                 </p>
 
 
 
             </div>
         </section>
+
+        <section class="section section3 containersec" id="socialmidea">
+            <div class="social">
+                <h2>Redes Sociais</h2>
+
+                <h3>Instagram</h3>
+                <div class="ali">
+                    <div class="instagram-area">
+                        <img
+                            src="https://cdn.jsdelivr.net/gh/glincker/thesvg@main/public/icons/instagram/default.svg"
+                            alt="Instagram"
+                            width="32"
+                            height="32"
+                            class="instalogo1"
+                        /> 
+
+                        <a href="https://www.instagram.com/g.u.i.l.h.e.r.m.e.0.2/" target="_blank">
+                            <button class="instagram-btn">Matheus</button>
+                        </a>
+
+                        <a href="https://www.instagram.com/matheusramos9_/" target="_blank">
+                            <button class="instagram-btn">Guilherme</button>
+                        </a>
+
+                        <a href="https://www.instagram.com/_karciano/" target="_blank">
+                            <button class="instagram-btn">Karciano</button>
+                        </a>
+
+                        <a href="https://www.instagram.com/kayzenndev/" target="_blank">
+                            <button class="instagram-btn">KayzenDev</button>
+                        </a>
+                    </div>
+                </div>
+
+                <h3>Currículo Lattes</h3>
+
+                <div class="ali">
+                    <div class="lattes-area">
+                        <img
+                        src="./assets/lattes.svg"
+                        alt="Lattes"
+                        class="latteslogo"
+                        >
+
+                        <a href="http://lattes.cnpq.br/0522676707227230" class="lattes-btn" target="_blank">Matheus</a>
+
+                        <a href="http://lattes.cnpq.br/0332060164838327" class="lattes-btn" target="_blank">Guilherme</a>
+
+                        <a href="http://lattes.cnpq.br/1458049704751009" class="lattes-btn" target="_blank">Karciano</a>
+
+                    </div>
+                </div>
+
+                <h3>Github</h3>
+
+                <div class="ali">
+                    <div class="github-area">
+                        <img
+                            src="https://cdn.jsdelivr.net/gh/glincker/thesvg@main/public/icons/github/dark.svg"
+                            alt="GitHub"
+                            width="40"
+                            height="40"
+                            />
+
+                        <a href="" target="_blank">
+                            <button class="github-btn">KayzenDev</button>
+                        </a>
+
+                    </div>  
+                </div>
+            </div>
+        </section>
     </main>
+
+    <footer class="footer">
+        <div class="footer-colunas">
+            <div class="footer-coluna">
+                <h3>Formulários</h3>
+                <a href="https://forms.gle/KWKoMNjBv1nr7RFK6" target="_blank">Pesquisa de Satisfação</a>
+                <a href="https://forms.gle/KWKoMNjBv1nr7RFK6" target="_blank">Informe de erros</a>
+            </div>
+
+            <div class="footer-coluna">
+                <h3>Contatos</h3>
+                <a href="https://mail.google.com/mail/?view=cm&fs=1&to=mrls9@aluno.ifal.edu.br" target="_blank">E-mail</a>
+            </div>
+
+            <div class="footer-coluna">
+                <h3>GitHub</h3>
+                <a href="https://github.com/kayzenndev" target="_blank">Acessar perfil</a>
+            </div>
+        </div>
+
+        <div class="footer-direitos">
+           KayzenDev © 2026. All Rights Reserved.
+        </div>
+    </footer>
 
 </body>
 

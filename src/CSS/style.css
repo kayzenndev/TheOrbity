@@ -12,7 +12,17 @@
 }
 
 body {
-    
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column
+}
+
+main {
+    flex: 1;
+}
+
+footer {
+  margin-top: auto;
 }
 
 html {
@@ -395,4 +405,217 @@ html {
 .link {
     text-decoration: none;
     color: #7a0bf8;
+}
+
+.social {
+    color: white;
+
+    text-align: justify;
+}
+
+.social h2 {
+    font-family: 'DM Sans';
+    font-size: 4rem;
+
+    margin-bottom: 5%;
+}
+
+.social {
+    font-family: 'Poppins';
+    font-size: 14pt;
+    font-weight: 300;
+}
+
+.instagram-area {
+  display: flex;
+  align-items: left; /* alinha logo e botão na mesma altura */
+  justify-content: left;
+  gap: 12px;
+}
+
+.instalogo1 {
+  margin-top: 0; /* remova o 5%, pois ele desalinha */
+  width: 40px; /* opcional */
+  height: auto;
+}
+
+.instagram-btn {
+  border: none;
+  border-radius: 14px;
+  padding: 10px 15px;
+  color: white;
+  background: linear-gradient(135deg, #833ab4, #c13584 42%, #fd1d1d 68%, #fcb045);
+  box-shadow: 0 10px 25px rgba(193, 53, 132, 0.34);
+  font: 600 16px Arial, sans-serif;
+  cursor: pointer;
+  transition: 0.2s ease;
+}
+
+.instagram-btn:hover {
+  transform: translateY(-2px);
+  filter: saturate(1.12) brightness(1.04);
+}
+
+.instagram-btn:active {
+  transform: scale(0.98);
+}
+
+.ali {
+  margin-top: 30px;
+  margin-bottom: 40px;
+}
+
+.lattes-area {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 10px;
+}
+
+.latteslogo {
+  width: 40px;
+  height: 40px;
+  margin: 0;
+}
+
+.lattes-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 40px;
+  padding: 10px 15px;
+
+  border: none; /* remove a borda feia */
+  outline: none;
+  border-radius: 14px;
+  box-sizing: border-box;
+
+  color: white;
+  background: linear-gradient(135deg, #003b8e, #006fce 50%, #00a8e8);
+  box-shadow: 0 10px 25px rgba(0, 111, 206, 0.35);
+  font: 600 16px Arial, sans-serif;
+  text-decoration: none;
+  cursor: pointer;
+  transition: 0.2s ease;
+}
+
+.lattes-btn:hover {
+  transform: translateY(-2px);
+  filter: saturate(1.12) brightness(1.04);
+}
+
+.lattes-btn:active {
+  transform: scale(0.98);
+}
+
+.github-area {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;  
+}
+
+.github-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 40px;
+  padding: 10px 15px;
+
+  border: none;
+  outline: none;
+  border-radius: 14px;
+  box-sizing: border-box;
+
+  color: white;
+  background: #303030;
+  box-shadow: 0 10px 25px rgba(39, 39, 39, 0.5);
+  font: 600 16px Arial, sans-serif;
+  text-decoration: none;
+  cursor: pointer;
+  transition: 0.2s ease;
+}
+
+.github-btn:hover {
+  transform: translateY(-2px);
+  filter: brightness(1.2);
+  box-shadow: 0 14px 30px rgba(0, 0, 0, 0.65);
+}
+
+.github-btn:active {
+  transform: scale(0.98);
+}
+
+.footer {
+  margin-top: auto;
+  padding: 32px 10% 16px;
+  color: white;
+  background: #071426;
+}
+
+.footer-colunas {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 48px;
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 0 26px;
+}
+
+.footer-coluna {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 9px;
+}
+
+.footer-coluna h3 {
+  margin: 0 0 8px;
+  color: #ffffff;
+  font: 600 18px 'DM Sans', Arial, sans-serif;
+  letter-spacing: 0.2px;
+}
+
+.footer-coluna a {
+  display: inline-block;
+  position: relative;
+  width: fit-content;
+  padding: 2px 0;
+
+  color: rgb(218, 218, 218);
+  font: 400 11pt 'DM Sans', sans-serif;
+  text-decoration: none;
+
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.footer-coluna a::after {
+  content: '';
+  position: absolute;
+  bottom: -1px;
+  left: 0;
+  width: 0;
+  height: 1px;
+  background: #7a0bf8;
+  transition: width 0.3s ease;
+}
+
+.footer-coluna a:hover {
+  color: #ffffff;
+  transform: translateY(-2px);
+}
+
+.footer-coluna a:hover::after {
+  width: 100%;
+}
+
+.footer-direitos {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding-top: 15px;
+
+
+  color: #b9c7dc;
+  font: 400 12px 'DM Sans', Arial, sans-serif;
+  text-align: center;
 }
