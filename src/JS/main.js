@@ -63,3 +63,33 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }
 });
+
+
+const musicBtn = document.getElementById("musicBtn");
+const ambientMusic = document.getElementById("ambientMusic");
+
+musicBtn.addEventListener("click", () => {
+    if (ambientMusic.paused) {
+        ambientMusic.play();
+        musicBtn.classList.add("playing");
+
+        musicBtn.innerHTML = `
+            <svg viewBox="0 0 24 24">
+                <path d="M7 5h4v14H7zM13 5h4v14h-4z"></path>
+            </svg>
+        `;
+
+        musicBtn.setAttribute("aria-label", "Pausar música ambiente");
+    } else {
+        ambientMusic.pause();
+        musicBtn.classList.remove("playing");
+
+        musicBtn.innerHTML = `
+            <svg viewBox="0 0 24 24">
+                <path d="M8 5v14l11-7z"></path>
+            </svg>
+        `;
+
+        musicBtn.setAttribute("aria-label", "Tocar música ambiente");
+    }
+});
