@@ -56,6 +56,7 @@ html {
     position: relative;
     color: rgb(218, 218, 218);
     transition: color 0.3s ease, transform 0.3s ease;
+
 }
 
 .navga ul li a::after {
@@ -67,11 +68,13 @@ html {
     height: 1.5px;
     background: #7a0bf8;
     transition: width 0.3s ease;
+
 }
 
 .navga ul li a:hover {
     color: #ffffff;
     transform: translateY(-4px);
+
 }
 
 .navga ul li a:hover::after {
@@ -85,6 +88,8 @@ html {
     margin-right: 2%;
     margin-top: 1%;
     margin-bottom: 1%;
+
+    list-style: none;
 }
 
 /* Botão sanduíche (some no desktop, aparece no mobile via media query) */
